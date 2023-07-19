@@ -65,6 +65,8 @@ sudo stopTomcat
 sudo startTomcat
 
 git clone https://github.com/jaiswaladi246/Petclinic.git
+cd Petclinic
+mvn clean package
 
 sudo cp target/*.war /opt/apache-tomcat-9.0.65/webapps/
 
