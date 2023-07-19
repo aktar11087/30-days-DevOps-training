@@ -59,9 +59,12 @@ comment:
 sudo apt-get update -y
 sudo apt install openjdk-11-jre -y
 sudo apt install maven -y
+cd ~
 
 sudo stopTomcat
 sudo startTomcat
+
+git clone https://github.com/jaiswaladi246/Petclinic.git
 
 sudo cp target/*.war /opt/apache-tomcat-9.0.65/webapps/
 
