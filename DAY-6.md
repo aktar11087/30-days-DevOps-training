@@ -46,7 +46,7 @@ Note: Before running the job, make sure you have already set up the desired OWAS
 ### Step 1: Downloading the Git Project
 $git clone [repo URL]
 
-### Step 2: Downloading the OWASP Dependency Check latest release (https://github.com/jeremylong/DependencyCheck/releases)
+### Step 2: Downloading the OWASP Dependency-Check latest release (https://github.com/jeremylong/DependencyCheck/releases)
 $wget [link-of-the-latest-release]
 
 $sudo apt install unzip
