@@ -43,6 +43,22 @@ Now, whenever you run the Jenkins job, OWASP Dependency Check will be invoked to
 
 Note: Before running the job, make sure you have already set up the desired OWASP Dependency-Check installation in Jenkins. You can do this by going to "Manage Jenkins" > "Global Tool Configuration" and adding a new installation for OWASP Dependency Check.
 
+### Step 1: Downloading the Git Project
+git clone <repo URL>
+
+### Step 2: Downloading the OWASP Dependency Check latest release (https://github.com/jeremylong/DependencyCheck/releases)
+$wget <link of the latest release>
+$sudo apt install unzip
+$unzip <zip file>
+$rm -rf <zip file>
+ 
+
+### Step 3: Run the OWASP Dependency Check
+$cd dependency-check
+$./bin/dependency-check.sh --out <path-to-the-project> --scan [path to jar files to be scanned]
+
+Afterwards follow the Pipeline steps
+
 ### Option 1: Downloading the Standalone JAR
 
 1. Go to the [OWASP Dependency Check releases page](https://github.com/jeremylong/DependencyCheck/releases).
